@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5e8976;
+    border-radius: 50px;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+body{
+    background: #181818;
+    color: #eeeeec;
+}
+.first_page{
+    height: 100vh;
+    display: flex;
+    padding: 0 40px;
+    .information{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .name{
+            font-size: 4rem;
+        }
+        .rol{
+            font-size: 3rem;
+            font-weight: 700;
+            color: #5e8976b5;
+        }
+        .description{
+            font-weight: 500;
+            color: #d8d8d8;
+        }
+        .socials{
+            display: flex;
+            gap: 10px;
+            & a{
+                background-color: #26262676;
+                display: flex;
+                padding: 12px;
+                border-radius: 12px;
+                color: #d8d8d8;
+                transition: all .5s;
+            }
+            a:hover{
+                background-color:#5e8976b9;
+                transition: all .5s;
+            }
+        }
+    }
+    .img_profile{
+        margin: auto;
+        .border2{
+            background-color: #3f3f3f76;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        .border{
+            background-color: #1f1f1f76;
+            padding: 25px;
+            border-radius: 50%;
+        }
+        .profile {
+            width: 200px;
+            background-color: #161616c9;
+            border-radius: 50%;
+            border: solid 30px #26262676;
+        }
+    }
+}
+.second_page{
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    .experience{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .experience_desc{
+            margin-top: 1rem;
+            display: flex;
+            gap: 2rem;
+            .title{
+                display: flex;
+                width: 30%;
+                color: #5e8976;
+                text-transform: uppercase;
+                font-size: small;
+                justify-content: end;
+            }
+            .desc_experience{
+                width: 70%;
+                display: flex;
+                justify-content: end;
+                font-size: small;
+                font-weight: 200;
+            }
+        }
+    }
+}
+.footer_page{
+    height: 50vh;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .link_blog{
+        text-decoration: none;
+        background-color: #5e8976;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+}
+
